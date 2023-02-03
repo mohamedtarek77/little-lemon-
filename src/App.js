@@ -1,10 +1,15 @@
-import './App.css';
+import "./App.css";
+import React from 'react';
+import { NavBar,Main,Footer } from "./comps/index";
 
 function App() {
   return (
-    <div className="App">
-hi there I am here I need some help
-    </div>
+    <React.Fragment className="App">
+
+    <NavBar/>
+ <Main/>
+ <Footer/>
+    </React.Fragment>
   );
 }
 
