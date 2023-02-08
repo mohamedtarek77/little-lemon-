@@ -2,6 +2,9 @@
 
 // export  {Header}  from './Header'
 
-export {default as NavBar} from './Header'
-export {default as Main} from './Main'
+export {default as NavBar} from './NavBar'
 export {default as Footer} from './Footer'
+export {default as Hero} from './Hero'
+export {default as Specials} from './Specials'
+export {default as Card} from './Card'
+export {default as Button} from './Button'

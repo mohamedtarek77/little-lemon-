@@ -2,37 +2,157 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NavBar */
+
+.container {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container img {
+  width: 150px;
+}
+.container .links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .links li {
+  list-style-type: none;
+  font-weight: 500;
+}
+
+/* Hero */
+
+main {
+  width: 100%;
+  height: 500px;
+  background-color: #495e57;
+}
+/* .containerForHero {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 200px;
+  margin: auto;
+  width: 900px;
+  position: relative;
+  height: 350px;
+  
+} */
+
+.containerForHero {
+  display: flex;
+  margin: auto;
+  width: 900px;
+  justify-content: space-between;
+  position: relative;
+  height: 350px;
+  padding-top: 10px;
+}
+
+.containerForHero img {
+  width: 384px;
+  height: 500px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+
+.containerForHero .content {
+  height: 450px;
+  width: 300px;
+  /* margin: 50px 20px 50px 20px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+}
+main .content h1 {
+  color: #f4ce14;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+main .content h3,
+main .content p {
+  color: #fff;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* button */
+
+button {
+  background-color: #f4ce14;
+  color: #000;
+  border-radius: 5px;
+  border-width: thin;
+  outline: none;
+  height: 40px;
+  max-width: 150px;
+  font-size: medium;
+  font-weight: 500;
 }
+
+/* Specials */
+
+.Specials .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 100px;
+}
+
+.Specials .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Specials .cards {
+  display: flex;
+  justify-content: space-between;
+/* gap: 20px; */
+}
+/* card */
+
+.card {
+width: 290px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+background-color: #EDEFEE;
+}
+
+.card .content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* width: 290px; */
+padding: 0 25px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius:20px ;
+}
+.card .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.title p {
+  color: red;
+  font-weight: 500;
+}
+
+/* .title + p {
+width: 100%;} */

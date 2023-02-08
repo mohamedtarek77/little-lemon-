@@ -1,13 +1,14 @@
 import "./App.css";
 import React from 'react';
-import { NavBar,Main,Footer } from "./comps/index";
+import { NavBar,Footer, Hero,Specials } from "./comps/index";
 
 function App() {
   return (
     <React.Fragment className="App">
 
     <NavBar/>
- <Main/>
+ <Hero/>
+ <Specials/>
  <Footer/>
     </React.Fragment>
   );
