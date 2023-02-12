@@ -1,15 +1,15 @@
 import "./App.css";
-import React from 'react';
-import { NavBar,Footer, Hero,Specials } from "./comps/index";
+import React from "react";
+import { Home, BookingPage } from "./comps/index";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <React.Fragment className="App">
-
-    <NavBar/>
- <Hero/>
- <Specials/>
- <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/booking" element={<BookingPage />}/>
+      </Routes>
     </React.Fragment>
   );
 }
