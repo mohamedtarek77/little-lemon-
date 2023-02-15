@@ -1,16 +1,23 @@
 import "./App.css";
 import React from "react";
-import { Home, BookingPage } from "./comps/index";
+import { Home, BookingPage, NavBar } from "./comps/index";
 import { Route, Routes } from "react-router-dom";
+
+import { TimesProvider } from "./UpdateTimes";
 
 function App() {
   return (
-    <React.Fragment className="App">
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/booking" element={<BookingPage />}/>
-      </Routes>
-    </React.Fragment>
+      <React.Fragment className="App">
+          <TimesProvider>
+
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bookingPage" element={<BookingPage />} />
+        </Routes>
+        </TimesProvider>
+
+      </React.Fragment>
   );
 }
 

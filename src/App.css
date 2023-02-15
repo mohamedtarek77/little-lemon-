@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.container .links a {
+  text-decoration: none;
+  color: #000;
+}
 .container .links li {
   list-style-type: none;
   font-weight: 500;
@@ -88,14 +92,20 @@ main .content p {
 
 button {
   background-color: #f4ce14;
-  color: #000;
   border-radius: 5px;
   border-width: thin;
   outline: none;
   height: 40px;
   max-width: 150px;
-  font-size: medium;
+}
+
+button  a {
+  text-decoration: none;
+  color: #000;
+  text-transform: initial;
   font-weight: 500;
+  font-size: medium;
+
 }
 
 /* Specials */
@@ -156,3 +166,12 @@ padding: 0 25px;
 
 /* .title + p {
 width: 100%;} */
+
+
+/* form */
+
+form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}

@@ -1,10 +1,9 @@
 import React from "react";
-import { NavBar, Footer, Hero, Specials } from "./index";
+import {  Footer, Hero, Specials } from "./index";
 
 const Home = () => {
   return (
     <div>
-      <NavBar />
       <Hero />
       <Specials />
       <Footer />
