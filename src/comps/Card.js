@@ -13,7 +13,6 @@ const Card = ({img,title,price,description}) => {
         <p >{description}</p>
         <Button text='order a delivery' />
         </div>
-  
     </div>
   )
 }

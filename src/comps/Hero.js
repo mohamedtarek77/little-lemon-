@@ -20,7 +20,9 @@ const Hero = () => {
             scrambled i
           </p>
 
-          <Button link='/bookingPage' text="book a table online" />
+          {/* <Button link='/bookingPage' text="book a table online" /> */}
+          <Button link='/bookingPage' text="Book Now" />
+
         </div>
         <img alt="Restaurantfood" src={Restaurantfood} />
       </div>
