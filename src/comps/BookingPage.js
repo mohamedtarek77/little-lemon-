@@ -29,7 +29,7 @@
 import React from "react";
 
 import { BookingForm } from "./index";
-import { useState, useReducer } from "react";
+import { useState, useReducer, useEffect } from "react";
 
 const BookingPage = () => {
   const [data, setData] = useState({
@@ -62,50 +62,72 @@ const BookingPage = () => {
   //   }
   // }
 
-
   ////
 
+  //   function updateTimes(Times, action) {
+  //     if (data.date === "2023-02-09") {
+  //       return Times;
+  //     } else if (data.date === "2023-02-10") {
+  //       return Times;
+  //     } else {
+  //       return Times;
+  //     }
 
-//   function updateTimes(Times, action) {
-//     if (data.date === "2023-02-09") {
-//       return Times;
-//     } else if (data.date === "2023-02-10") {
-//       return Times;
-//     } else {
-//       return Times;
-//     }
-  
+  // ////
 
-// ////
+  //     // switch (action.type) {
+  //     //   case "2023-02-09":
+  //     //     {
+  //     //       return Times;
+  //     //     }
 
-//     // switch (action.type) {
-//     //   case "2023-02-09":
-//     //     {
-//     //       return Times;
-//     //     }
+  //     //     break;
 
-//     //     break;
+  //     //   default:
+  //     //     break;
+  //     // }
 
-//     //   default:
-//     //     break;
-//     // }
+  //     // if (data.date==='2023-02-09') {
+  //     //   setAvailableTimes((preData)=>preData.pop)
+  //     // }
+  //     // else if (data.date==='2023-02-10') {
+  //     //   setAvailableTimes((preData)=>preData.pop)
 
-//     // if (data.date==='2023-02-09') {
-//     //   setAvailableTimes((preData)=>preData.pop)
-//     // }
-//     // else if (data.date==='2023-02-10') {
-//     //   setAvailableTimes((preData)=>preData.pop)
+  //     // }
+  //     // else {
+  //     //   return AvailableTimes;
+  //     // }
+  //   }
 
-//     // }
-//     // else {
-//     //   return AvailableTimes;
-//     // }
-//   }
+  function fetchDate() {
+    return fetch(
+      "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"
+    )
+    .then((response)=>response.json()).then((data1)=>console.log(data1))
 
-  // const initializeTimes = () => {
-  //   setAvailableTimes(["18:00pm", "19:00pm", "23:00pm"]);
-  // };
+    // return fetch('https://jsonplaceholder.typicode.com/users').then((response)=>response.json()).then((data1)=>console.log(data1))
+  }
 
+  useEffect(() => {
+    // fetchDate();
+
+    // fetch(
+    //   "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"
+    // )
+    // .then((response)=>response.text()).then((data1)=>console.log(data1))
+
+
+    fetch(
+      "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"
+    )
+    .then((response)=>response.text()).then((data1)=>console.log(data1 ))
+
+    console.log("tarek");
+  }, []);
+
+  const initializeTimes = () => {
+    // fetchAPI(["18:00pm", "19:00pm", "23:00pm"]);
+  };
 
   return (
     <div>

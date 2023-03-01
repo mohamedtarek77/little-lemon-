@@ -1,10 +1,18 @@
-import React, { useContext,useReducer } from "react";
+import React, { useContext,useReducer,useEffect } from "react";
 
 import  updateTimes  from "../UpdateTimes";
 const BookingForm = ({ data, setData, availableTimes }) => {
   // const {dispatch,state } = useContext(TimesContext);
 
   const initializeTimes = ["18:00pm", "20:00pm", "23:00pm"];
+
+
+  useEffect(() => {
+    
+
+
+  }, []);
+  
 
   const [Times, dispatch] = useReducer(updateTimes, initializeTimes);
 
@@ -65,7 +73,7 @@ time:time
         <input
           type="number"
           placeholder="1"
-          min="1"
+          min="2"
           max="10"
           id="guests"
           value={data.NumberOfGuests}
